@@ -1,4 +1,3 @@
-
 pub fn part_one(input: &str) -> Option<u32> {
     let mut s: Vec<u32> = input
         .split("\n\n")
@@ -11,7 +10,7 @@ pub fn part_one(input: &str) -> Option<u32> {
         })
         .collect();
     s.sort();
-    Some(s[s.len()-1])
+    Some(s[s.len() - 1])
 }
 
 pub fn part_two(input: &str) -> Option<u32> {
