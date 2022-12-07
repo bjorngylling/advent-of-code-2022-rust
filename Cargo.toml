@@ -7,5 +7,6 @@ default-run = "aoc"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+id_tree = "1.8.0"
 pico-args = "0.5.0"
 regex = "1.7.0"
