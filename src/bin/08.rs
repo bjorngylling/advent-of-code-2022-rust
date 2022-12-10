@@ -43,10 +43,6 @@ fn from_coord(p: (usize, usize), w: usize) -> usize {
     return p.0 + p.1 * w;
 }
 
-fn to_coord(i: usize, w: usize) -> (usize, usize) {
-    return (i % w, i / w);
-}
-
 pub fn part_two(input: &str) -> Option<u32> {
     let w = input.lines().next().unwrap().len();
     let h = input.lines().count();
@@ -94,9 +90,8 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_coord() {
+    fn test_from_coord() {
         assert_eq!(45, from_coord((5, 4), 10));
-        assert_eq!((5, 4), to_coord(45, 10));
     }
 
     #[test]
