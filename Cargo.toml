@@ -8,5 +8,6 @@ default-run = "aoc"
 
 [dependencies]
 id_tree = "1.8.0"
+num-integer = "0.1.45"
 pico-args = "0.5.0"
 regex = "1.7.0"
